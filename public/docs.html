@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
+
+        <title>RedFinch</title>
+
+        <!-- Basic SEO -->
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="robots" content="">
+        <!-- ./Basic SEO -->
+
+        <!-- Schema.org -->
+        <meta itemprop="name" content="">
+        <meta itemprop="description" content="">
+        <meta itemprop="image" content="/images/meta/meta-logo.png">
+        <!-- ./Schema.org -->
+
+        <!-- Open Graph -->
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="">
+        <meta property="og:title" content="">
+        <meta property="og:description" content="">
+        <meta property="og:url" content="" />
+        <meta property="og:image" content="/images/meta/meta-logo.png" />
+        <!-- ./Open Graph -->
+
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="">
+        <meta name="twitter:title" content="">
+        <meta name="twitter:description" content="">
+        <meta name="twitter:url" content="" />
+        <meta name="twitter:image" content="/images/meta/meta-logo.png" />
+        <!-- ./Twitter -->
+
+        <!-- Crawlers -->
+        <meta name="rating" content="general" />
+        <meta name="revisit-after" content="1 Month" />
+        <!-- ./Crawlers -->
+
+        <!-- Devices -->
+        <meta name="application-name" content="" />
+        <meta name="theme-color" content="#F7C44F">
+
+        <link rel="mask-icon" href="/images/meta/pinned.svg" color="000000">
+        <link rel="apple-touch-icon-precomposed" href="/images/meta/touch-icon.png" />
+        <link rel="icon" type="image/png" href="/images/meta/favicon.png" />
+        <link rel="icon" sizes="152x152" href="/images/meta/touch-icon.png">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        <!-- ./Devices -->
+
+        <!-- Styles -->
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,600i" rel="stylesheet">
+        <link rel="stylesheet" href="/assets/css/global.css">
+        <!-- ./Styles -->
+
+        <!-- Analytics -->
+        <!-- ./Analytics -->
+    </head>
+
+    <body>
+
+        <!-- Nav -->
+        <nav class="nav has-shadow">
+            <div class="container">
+                <div class="nav-left">
+                    <a href="#" class="nav-item">
+                        Home
+                    </a>
+                    <a href="#" class="nav-item">
+                        About
+                    </a>
+                    <a href="#" class="nav-item">
+                        Releases
+                    </a>
+                </div>
+                <div class="nav-right">
+                    <a href="#" class="nav-item nav-item-icon">
+                        <span class="icon is-medium">
+                            <i class="fa fa-twitter"></i>
+                        </span>
+                    </a>
+                    <a href="#" class="nav-item nav-item-icon">
+                        <span class="icon is-medium">
+                            <i class="fa fa-github"></i>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <!-- ./Nav -->
+
+        <!-- Header -->
+        <section class="hero is-info is-docs">
+            <div class="hero-body">
+                <div class="container">
+                    <div class="level">
+                        <div class="level-left">
+                            <div class="level-item">
+                                <a href="/" class="logo">
+                                    <img src="/assets/images/logo-sm--reverse.svg" alt="Red Finch | Perch App Development" />
+                                </a>
+                            </div>
+                            <div class="level-item">
+                                <h1 class="title">Activity Monitor</h1>
+                            </div>
+                        </div>
+                        <div class="level-right">
+                            <div class="level-item">
+                                <a class="button is-medium is-download">
+                                    Download v1.2.1
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ./Header -->
+
+        <!-- Header -->
+        <section class="hero is-warning is-docs">
+            <div class="hero-body">
+                <div class="container">
+                    <div class="level">
+                        <div class="level-left">
+                            <div class="level-item">
+                                <a href="/" class="logo">
+                                    <img src="/assets/images/logo-sm.svg" alt="Red Finch | Perch App Development" />
+                                </a>
+                            </div>
+                            <div class="level-item">
+                                <h1 class="title">Activity Monitor</h1>
+                            </div>
+                        </div>
+                        <div class="level-right">
+                            <div class="level-item">
+                                <a class="button is-medium is-download">
+                                    Download v1.2.1
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ./Header -->
+
+        <!-- Page -->
+        <article class="section">
+            <div class="container">
+                <div class="columns">
+                    <div class="column is-one-quarter">
+                        <aside class="menu">
+                            {% for section in page.sections %}
+                            <p class="menu-label">
+                                {{ section | textilize }}
+                            </p>
+                            {% endfor %}
+                            <p class="menu-label">
+                                Installation
+                            </p>
+                            <ul class="menu-list">
+                                <li><a>System Requirements</a></li>
+                            </ul>
+                            <p class="menu-label">
+                                Configuration
+                            </p>
+                            <ul class="menu-list">
+                                <li><a>Creating API Keys</a></li>
+                                <li><a>Settings Panel</a></li>
+                                <li><a>Roles & Permissions</a></li>
+                            </ul>
+                        </aside>
+                    </div>
+                    <div class="column is-three-quarters content">
+                        {{ page.content }}
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- ./Page -->
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="columns">
+                    <div class="column is-third">
+                        &copy; Red Finch, 2017
+                    </div>
+                    <div class="column is-third has-text-centered">
+                        <a href="#">
+                            <span class="icon is-medium">
+                                <i class="fa fa-twitter"></i>
+                            </span>
+                        </a>
+                        <a href="#">
+                            <span class="icon is-medium">
+                                <i class="fa fa-github"></i>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="column is-third has-text-right">
+                        Design by James Wigger
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- ./Footer -->
+
+    </body>
+
+</html>

@@ -1,0 +1,17 @@
+.hero {
+    &.is-header {
+        .hero-body {
+            padding: 5rem 1.5rem;
+        }
+    }
+
+    &.is-docs {
+        .hero-body {
+            padding: 2rem 1.5rem;
+        }
+
+        .logo {
+            margin-right: 1.5rem;
+        }
+    }
+}

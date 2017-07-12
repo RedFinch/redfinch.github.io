@@ -1,0 +1,26 @@
+ github: [metadata]
+
+ kramdown:
+   input: GFM
+   hard_wrap: false
+
+ gems:
+   - jekyll-coffeescript
+   - jekyll-paginate
+
+ collections:
+   releases:
+     output: true
+     permalink: /:collection/:name
+
+ exclude:
+   - package.json
+   - project.config.js
+   - webpack.mix.js
+   - webpack.config.js
+   - yarn.lock
+   - resources
+   - public
+   - node_modules
+   - Gemfile
+   - Gemfile.lock

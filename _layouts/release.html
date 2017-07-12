@@ -1,0 +1,65 @@
+{% include header.html %}
+
+    <!-- Header -->
+    <section class="hero {% if page.accent %} is-info {% else %} is-warning {% endif %} is-docs" {% if page.accent %} style="background-color: {{ page.accent }};" {% endif %}>
+        <div class="hero-body">
+            <div class="container">
+                <div class="level">
+                    <div class="level-left">
+                        <div class="level-item">
+                            <div class="logo-container">
+                                <div class="logo-container-item">
+                                    <a href="/" class="logo">
+                                        <img src="/assets/images/{% if page.accent %}logo-sm--reverse.svg{% else %}logo-sm.svg{% endif %}" alt="Red Finch | Perch App Development" />
+                                    </a>
+                                </div>
+                                <div class="logo-container-item">
+                                    <h1 class="title">{{ page.title }}</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="level-right">
+                        <div class="level-item">
+                            <a class="button is-medium is-download" href="https://github.com/{{ page.repository }}/archive/{{ page.version }}.zip">
+                                Download {{ page.version }}
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ./Header -->
+
+    <!-- Page -->
+    <article class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-one-quarter">
+                    <aside class="menu">
+
+                        {% for nav in page.nav %}
+                            <p class="menu-label">
+                                {{ nav.section }}
+                            </p>
+                            <ul class="menu-list">
+                                {% for link in nav.links %}
+                                    <li>
+                                        <a href="#{{ link.label | slugify }}">{{ link.label }}</a>
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                        {% endfor %}
+
+                    </aside>
+                </div>
+                <div class="column is-three-quarters content">
+                    {{ content }}
+                </div>
+            </div>
+        </div>
+    </article>
+    <!-- ./Page -->
+
+{% include footer.html %}

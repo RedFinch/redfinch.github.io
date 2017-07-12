@@ -1,0 +1,26 @@
+.search-bar {
+    border-top: 1px solid $grey-lighter;
+    border-bottom: 1px solid $grey-lighter;
+
+    margin-right: -0.5rem;
+    margin-left: -0.5rem;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.search-bar__slot {
+    flex: 1;
+    padding: 0.8rem 0.5rem;
+    border-right: 1px solid $grey-lighter;
+
+    &:first-child {
+        border-left: 1px solid $grey-lighter;
+    }
+}
+
+.search-bar__slot--major {
+    flex-grow: 2;
+}

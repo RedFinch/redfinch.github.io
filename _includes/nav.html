@@ -1,0 +1,67 @@
+<div class="has-shadow">
+    <div class="container">
+
+        <nav class="navbar">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="/">
+                    <img src="/assets/images/logo-sm.svg" alt="Bulma: a modern CSS framework based on Flexbox" width="28" height="28">
+                </a>
+
+                <div class="navbar-burger burger" data-target="globalNav">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+
+            <div id="globalNav" class="navbar-menu">
+
+                <div class="navbar-start">
+                    {% for page in site.data.pages %}
+                        <a class="navbar-item " href="{{ page.path }}">
+                            {{ page.label }}
+                        </a>
+                    {% endfor %}
+                    {% if site.releases %}
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link " href="/#releases">
+                            Releases
+                        </a>
+                        <div class="navbar-dropdown" >
+
+                            {% for release in site.releases %}
+                                <a class="navbar-item" href="{{ release.url }}">
+                                    <div class="navbar-content">
+                                        <span style="margin-right: 5px;">{{ release.title }}</span>
+                                        <small class="has-text-info">{{ release.version }}</small>
+                                    </div>
+                                </a>
+                            {% endfor %}
+
+                        </div>
+                    </div>
+                    {% endif %}
+                </div>
+
+                <div class="navbar-end is-hidden-mobile">
+                    {% if site.data.accounts.twitter %}
+                    <a href="https://twitter.com/{{ site.data.accounts.twitter }}" class="navbar-item nav-item-icon" target="_blank">
+                        <span class="icon is-medium">
+                            <i class="fa fa-twitter"></i>
+                        </span>
+                    </a>
+                    {% endif %}
+
+                    {% if site.data.accounts.github %}
+                    <a href="https://github.com/{{ site.data.accounts.github }}" class="navbar-item nav-item-icon" target="_blank">
+                        <span class="icon is-medium">
+                            <i class="fa fa-github"></i>
+                        </span>
+                    </a>
+                    {% endif %}
+                </div>
+            </div>
+        </nav>
+
+    </div>
+</div>

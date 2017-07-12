@@ -1,0 +1,28 @@
+.release {
+    padding: 4rem 1.5rem;
+    background-color: $info;
+    color: #FFF;
+
+    .title {
+        color: #FFF;
+    }
+}
+
+.release-description {
+    margin-bottom: 2rem;
+}
+
+.release-requirements {
+    margin-bottom: 2.5rem;
+}
+
+.release-screenshot {
+    box-shadow: 0 2px 5px rgba(#000, 0.05);
+    border: 8px solid rgba(#000, 0.1);
+    border-radius: 2px;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}

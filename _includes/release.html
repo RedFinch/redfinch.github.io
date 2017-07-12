@@ -1,0 +1,49 @@
+<div class="release" {% if release.accent %} style="background-color: {{ release.accent }};" {% endif %}>
+    <div class="container">
+        <div class="columns">
+            <div class="column is-half">
+
+                <div class="release-description">
+                    <h1 class="title is-2">
+                        {{ release.title }}
+                    </h1>
+                    <p>
+                        {{ release.summary }}
+                    </p>
+                </div>
+
+                {% if release.requirements %}
+                <div class="release-requirements">
+                    <h3 class="title is-4">Requirements</h3>
+                    <ul>
+                        {% for requirement in release.requirements %}
+                        <li>{{ requirement }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                {% endif %}
+
+                <div class="block">
+                    <a href="https://github.com/{{ release.repository }}/archive/{{ release.version }}.zip" class="button is-medium is-download">
+                        Download {{ release.version }}
+                    </a>
+                    <a href="{{ release.url }}" class="button is-medium is-link is-documentation">
+                        Documentation
+                    </a>
+                </div>
+
+            </div>
+            {% if release.preview %}
+            <div class="column is-half">
+
+                <div class="release-screenshot">
+                    <div class="image">
+                        <img src="{{ release.preview }}" alt="Preview image of {{ release.title }} (screen capture)"/>
+                    </div>
+                </div>
+
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</div>

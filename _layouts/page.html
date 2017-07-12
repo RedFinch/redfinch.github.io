@@ -1,0 +1,38 @@
+{% include header.html %}
+
+    <!-- Header -->
+    <section class="hero {% if page.accent %} is-info {% else %} is-warning {% endif %} is-docs" {% if page.accent %} style="background-color: {{ page.accent }};" {% endif %}>
+        <div class="hero-body">
+            <div class="container">
+
+                <div class="logo-container">
+                    <div class="logo-container-item">
+                        <a href="/" class="logo">
+                            <img src="/assets/images/{% if page.accent %}logo-sm--reverse.svg{% else %}logo-sm.svg{% endif %}" alt="Red Finch | Perch App Development" />
+                        </a>
+                    </div>
+                    <div class="logo-container-item">
+                        <h1 class="title">{{ page.title }}</h1>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- ./Header -->
+
+    <!-- Page -->
+    <article class="section">
+        <div class="container">
+            <div class="columns">
+
+                <div class="column is-8 is-offset-2 content">
+                    {{ content }}
+                </div>
+
+            </div>
+        </div>
+    </article>
+    <!-- ./Page -->
+
+{% include footer.html %}

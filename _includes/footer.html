@@ -1,0 +1,40 @@
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="columns">
+                    <div class="column is-third">
+                        &copy; Red Finch, {{ site.time | date: '%Y' }}<br />
+                        <small>Perch is a trademark of <a href="https://edgeofmyseat.com" target="_blank">edgeofmyseat.com</a></small>
+                    </div>
+                    <div class="column is-third has-text-centered">
+
+                        {% if site.data.accounts.twitter %}
+                        <a href="https://twitter.com/{{ site.data.accounts.twitter }}" target="_blank">
+                            <span class="icon is-medium">
+                                <i class="fa fa-twitter"></i>
+                            </span>
+                        </a>
+                        {% endif %}
+
+                        {% if site.data.accounts.github %}
+                        <a href="https://github.com/{{ site.data.accounts.github }}" target="_blank">
+                            <span class="icon is-medium">
+                                <i class="fa fa-github"></i>
+                            </span>
+                        </a>
+                        {% endif %}
+
+                    </div>
+                    <div class="column is-third has-text-right">
+                        Design by <a href="https://jameswigger.co.uk/">James Wigger</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- ./Footer -->
+
+        <script src="/assets/js/app.js"></script>
+
+    </body>
+
+</html>

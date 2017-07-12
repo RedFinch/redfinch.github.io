@@ -1,0 +1,42 @@
+// Config
+
+$orange: #7E364E;
+$yellow: #F8D573;
+$green: #4AA066;
+$turquoise: #63C9A1;
+$blue: #408DE9;
+$purple: #4B2241;
+$red: #D14C5A;
+
+$family-sans-serif: 'Source Sans Pro', sans-serif;
+$weight-light: 300;
+$weight-normal: 400;
+$weight-semibold: 600;
+$weight-bold: 600;
+
+$tablet: 769px;
+$desktop: 840px;
+$widescreen: 990px;
+$fullhd: 1192px;
+
+$link: $purple;
+$link-hover: $red;
+
+@import '~bulma/bulma.sass';
+@import '~font-awesome/scss/font-awesome.scss';
+
+.has-shadow {
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1);
+}
+
+@import 'custom/button';
+@import 'custom/hero';
+@import 'custom/logo-container';
+@import 'custom/nav';
+@import 'custom/release';
+@import 'custom/search-bar';
+@import 'custom/section';
+@import 'custom/select';
+@import 'custom/footer';

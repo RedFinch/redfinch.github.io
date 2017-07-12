@@ -1,0 +1,20 @@
+.button.is-download {
+    border: 0;
+    background: linear-gradient(to bottom, $turquoise 0%, $green 100%);
+    box-shadow: 0 2px 2px rgba(#000, 0.1);
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    color: #FFF;
+}
+
+.button.is-documentation {
+    margin-left: 2rem;
+    text-decoration: none;
+    color: #FFF;
+
+    &:hover {
+        background: none;
+        text-decoration: underline;
+        color: #FFF;
+    }
+}
