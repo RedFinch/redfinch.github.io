@@ -1,5 +1,12 @@
  github: [metadata]
 
+ meta:
+   domain: https://redfinch.org
+   title: Red Finch | Open Source Perch Add-ons, Plugins and Utilities
+   description: Custom Perch CMS add-ons, plugins and utilities. Open source and free to download.
+   keywords: 'perch, cms, addons, plugins, apps, free, opensource, github, php'
+   theme: '#E23E56'
+
  kramdown:
    input: GFM
    hard_wrap: false

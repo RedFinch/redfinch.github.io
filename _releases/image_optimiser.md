@@ -35,6 +35,10 @@ nav:
     links:
       - label: Credits
       - label: License
+
+# Meta
+meta:
+  title: 'Perch Image Optimiser'
 ---
 
 ## Prerequisites

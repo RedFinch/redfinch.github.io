@@ -30,6 +30,10 @@ nav:
   - section: Miscellaneous
     links:
       - label: License
+      
+# Meta
+meta:
+  title: 'Perch Event Logger'
 ---
 
 ## Installation
@@ -66,10 +70,6 @@ The list of events that are tracked include:
 * `assets.upload_image`
 
 Certain events include a history tab that shows changes over time. Asset based events will attempt to show a preview of the uploaded image, however if the log is older or the asset is deleted this may not always be possible.
-
-### History
-
-Todo: write here and fix performance issues with long history.
 
 ## Miscellaneous
 
