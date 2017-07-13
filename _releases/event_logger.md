@@ -5,7 +5,7 @@ summary: The Perch Event Log is your trusty companion, tracking what has changed
 
 # Download
 repository: RedFinch/Perch-Event-Log
-version: v1.0.0
+version: v1.0.1
 
 # Theme
 accent: '#1B85F4'
